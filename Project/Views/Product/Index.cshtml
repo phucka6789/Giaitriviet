@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Project.Models.Database.Category>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Product</h2>
+
+<table>
+    <tr>
+        <td>Name VN</td>
+        <td>Name EN</td>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.MetaTitle</td>
+        </tr>
+    }
+</table>
+

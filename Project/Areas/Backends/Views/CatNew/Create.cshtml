@@ -1,0 +1,156 @@
+﻿@model Project.Models.Database.CatNew
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<section class="content-header">
+    <h1>
+        Thêm danh mục bài viết
+
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Thêm chủ đề</a></li>
+
+    </ol>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            ArticleCat
+                        </div>
+                        <div class="panel-body">
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        @Html.ValidationSummary(true)
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>Tên danh mục</label>
+                                                <div class="form-group">
+                                                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control Changetitle" })
+                                                    <span class="err">@Html.ValidationMessageFor(model => model.Name)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>Danh mục cha</label>
+                                                <div class="form-group">
+                                                    @Html.DropDownListFor(x => x.ParentID, (IEnumerable<SelectListItem>)ViewBag.ParentID, "--Danh mục gốc--", new { @class = "form-control" })
+                                                    @Html.ValidationMessageFor(model => model.ParentID)
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>SEO Description</label>
+                                                <div class="form-group">
+                                                    @Html.TextAreaFor(model => model.MetaDescriptions, new { @class = "form-control" })
+                                                    @Html.ValidationMessageFor(model => model.MetaDescriptions)
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-actions no-color">
+                                            <input type="submit" value="Tạo mới" class="btn btn-primary" />
+                                            @Html.ActionLink("Trở về danh sách", "Index")
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>Alias</label>
+                                                <div class="form-group">
+                                                    @Html.TextBoxFor(model => model.MetaTitle, new { @class = "form-control slug" })
+                                                    <span class="err">@Html.ValidationMessageFor(model => model.MetaTitle)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row" style="display:none">
+                                            <div class="col-lg-12">
+                                                <label>Thứ tự</label>
+                                                <div class="form-group">
+                                                    @Html.TextBoxFor(model => model.DisplayOrder, new { @class = "form-control", @Value = "0" })
+                                                    <span class="err">@Html.ValidationMessageFor(model => model.DisplayOrder)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label>Trạng thái: </label>
+                                                    <div class="checkbox-inline">
+                                                        <label>
+                                                            @Html.CheckBoxFor(m => m.Status, new { @checked = "checked" }) Hiển thị
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>SEO Keyword</label>
+                                                <div class="form-group">
+                                                    @Html.TextAreaFor(model => model.MetaKeywords, new { @class = "form-control" })
+                                                    @Html.ValidationMessageFor(model => model.MetaKeywords)
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+
+            </div>
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

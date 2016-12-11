@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Project.Models.Database.Business>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<section class="content-header">
+    <h1>
+        Quản lý nghiệp vụ
+
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Quản lý nghiệp vụ</a></li>
+
+    </ol>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div>
+            @Html.Raw(TempData["err"])
+        </div>
+        <div class="col-xs-12">
+            @Html.ActionLink("Cập nhật", "UpdateBusiness", new { }, new { @class = "btn btn-success  pull-right" })
+
+        </div>
+        <div class="col-xs-12">
+            <div class="box-body box box-primary">
+                <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.BusinessId)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.BusinessName)
+                            </th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.BusinessId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.BusinessName)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.BusinessId }) |
+                                    @Html.ActionLink("Danh mục Action", "Index", "Permission", new { id = item.BusinessId }, null) |
+                                   
+                                    @*@Html.ActionLink("Delete", "Delete", new { id = item.BusinessId })*@
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+

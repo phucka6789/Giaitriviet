@@ -1,0 +1,112 @@
+E:\DEMO\Project\Project\bin\Project.dll.config
+E:\DEMO\Project\Project\bin\Project.dll
+E:\DEMO\Project\Project\bin\Project.pdb
+E:\DEMO\Project\Project\bin\Antlr3.Runtime.dll
+E:\DEMO\Project\Project\bin\EntityFramework.dll
+E:\DEMO\Project\Project\bin\EntityFramework.SqlServer.dll
+E:\DEMO\Project\Project\bin\Microsoft.AspNet.Identity.Core.dll
+E:\DEMO\Project\Project\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\DEMO\Project\Project\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\DEMO\Project\Project\bin\Microsoft.Owin.dll
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.Cookies.dll
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.dll
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.Facebook.dll
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.Google.dll
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.OAuth.dll
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.Twitter.dll
+E:\DEMO\Project\Project\bin\Microsoft.Web.Infrastructure.dll
+E:\DEMO\Project\Project\bin\Newtonsoft.Json.dll
+E:\DEMO\Project\Project\bin\Owin.dll
+E:\DEMO\Project\Project\bin\System.Web.Helpers.dll
+E:\DEMO\Project\Project\bin\System.Web.Mvc.dll
+E:\DEMO\Project\Project\bin\System.Web.Optimization.dll
+E:\DEMO\Project\Project\bin\System.Web.Razor.dll
+E:\DEMO\Project\Project\bin\System.Web.WebPages.Deployment.dll
+E:\DEMO\Project\Project\bin\System.Web.WebPages.dll
+E:\DEMO\Project\Project\bin\System.Web.WebPages.Razor.dll
+E:\DEMO\Project\Project\bin\WebGrease.dll
+E:\DEMO\Project\Project\bin\System.Web.Helpers.xml
+E:\DEMO\Project\Project\bin\System.Web.Mvc.xml
+E:\DEMO\Project\Project\bin\System.Web.Optimization.xml
+E:\DEMO\Project\Project\bin\System.Web.Razor.xml
+E:\DEMO\Project\Project\bin\System.Web.WebPages.xml
+E:\DEMO\Project\Project\bin\System.Web.WebPages.Deployment.xml
+E:\DEMO\Project\Project\bin\System.Web.WebPages.Razor.xml
+E:\DEMO\Project\Project\bin\Newtonsoft.Json.xml
+E:\DEMO\Project\Project\bin\Antlr3.Runtime.pdb
+E:\DEMO\Project\Project\bin\EntityFramework.xml
+E:\DEMO\Project\Project\bin\EntityFramework.SqlServer.xml
+E:\DEMO\Project\Project\bin\Microsoft.AspNet.Identity.Core.xml
+E:\DEMO\Project\Project\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\DEMO\Project\Project\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\DEMO\Project\Project\bin\Microsoft.Owin.xml
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.xml
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.Facebook.xml
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.Cookies.xml
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.OAuth.xml
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.Google.xml
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.Twitter.xml
+E:\DEMO\Project\Project\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\DEMO\Project\Project\obj\Debug\Project.dll
+E:\DEMO\Project\Project\obj\Debug\Project.pdb
+E:\DEMO\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Project.dll.config
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Project.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Project.pdb
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Antlr3.Runtime.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\EntityFramework.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\EntityFramework.SqlServer.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.AspNet.Identity.Core.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.Cookies.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.Facebook.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.Google.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.OAuth.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.Twitter.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Web.Infrastructure.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Newtonsoft.Json.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Owin.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.Helpers.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.Mvc.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.Optimization.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.Razor.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.WebPages.Deployment.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.WebPages.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.WebPages.Razor.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\WebGrease.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\EntityFramework.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\EntityFramework.SqlServer.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.Helpers.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.Mvc.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.Optimization.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.Razor.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.WebPages.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.WebPages.Deployment.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\System.Web.WebPages.Razor.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Newtonsoft.Json.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Antlr3.Runtime.pdb
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.AspNet.Identity.Core.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.Facebook.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.Cookies.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.OAuth.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.Google.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.Twitter.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\obj\Debug\Project.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\obj\Debug\Project.pdb
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\CKFinder.dll
+E:\HOC TAP\Công Việc\Giaitriviet\Project\Project\bin\CKFinder.pdb

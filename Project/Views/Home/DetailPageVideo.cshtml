@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "DetailPageVideo";
+    var videos = "<iframe width='780' height='478' src='https://www.youtube.com/embed/ICWG2_p8Iqw' frameborder='0' allowfullscreen></iframe>";
+}
+
+<div class="container blogging-style">
+    <div class="row">
+        <!-- hot news start -->
+        @Html.Partial("_ShileTexttop")
+        <!-- hot news end -->
+        <!-- banner outer thumb start -->
+        <div class="col-xs-16 banner-outer-thumb  pull-left  wow fadeInLeft animated" data-wow-delay="0.5s" data-wow-offset="50">
+            <div class="row">
+                 <div id="banner-thumbs" class="owl-carousel">
+                   @Html.Partial("_ShileVideo")
+                </div>
+            </div>
+        </div>
+
+        <!-- banner outer thumb end -->
+        <!-- mid sec start -->
+        <!-- mid sec end -->
+        <!-- left sec start -->
+        <div class="col-lg-11 col-md-11 col-sm-6 col-xs-16 pull-left">
+            <div class="row block_colom">
+                <!-- big thumbs start -->
+
+                <div class="col-sm-16 business  wow fadeInDown animated" data-wow-delay="1s" data-wow-offset="50">
+                    @*<a class="popup-youtube" href="@videos">
+                    <div class="thumb-box">
+                        <span class="ion-arrow-expand"></span>
+                        <iframe width="780" height="478" src="https://www.youtube.com/embed/ICWG2_p8Iqw"></iframe>
+                    </div>
+                </a>*@
+                    <iframe width="770" height="478" src="https://www.youtube.com/embed/ICWG2_p8Iqw"></iframe>
+                    <a href="#">
+                        <h3>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu</h3>
+                    </a>
+                    <div class="text-danger sub-info-bordered">
+                        <div class="time"><span class="ion-android-data icon"></span>Dec 9 2014</div>
+                        <div class="comments"><span class="ion-chatbubbles icon"></span>204</div>
+                        <div class="stars"><span class="ion-ios7-star"></span><span class="ion-ios7-star"></span><span class="ion-ios7-star"></span><span class="ion-ios7-star"></span><span class="ion-ios7-star-half"></span></div>
+                    </div>
+                    <p>Lorem Ipsum has been the standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    <hr>
+                </div>
+
+                <!--big thumbs end-->
+
+            </div>
+        </div>
+        <!-- left sec end -->
+        <!-- right sec start -->
+        <div class="col-sm-5 hidden-xs right-sec top-margin">
+            @Html.Partial("_comlRight")
+        </div>
+        <!-- right sec end -->
+    </div>
+</div>
+

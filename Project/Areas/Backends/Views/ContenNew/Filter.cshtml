@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Project.Models.Database.ContenNew>
+
+@{
+    ViewBag.Title = "Filter";
+    Layout = null;
+}
+<div class="panel-body">
+
+    <div class="dataTable_wrapper">
+
+        <table class="table table-striped table-bordered table-hover tbl_order" id="dataTables-example">
+            <thead>
+                <tr>
+                    <th class="text-center"><input type="checkbox" id="all_check" /> </th>
+                    <th>
+                        Tên bài viết
+                    </th>
+                    <th style="width:17%">Danh mục</th>
+                    <th class="text-center" style="width:13%">
+                        Tác giả
+                    </th>
+                    <th style="width:15%" class="text-center">
+                        Ngày tạo
+                    </th>
+                    <th style="width:15%" class="text-center">
+                        Trạng thái
+                    </th>
+                    <th style="width:15%" class="text-center"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-center"><input type="checkbox" name="listDelete" value="@item.Id" class="chk" /> </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CatNew.Name)
+                        </td>
+                        <td class="text-center ">
+                            @Html.DisplayFor(modelItem => item.Administrator.FullName)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.CreatedDate)
+                        </td>
+
+                        <td class="text-center">
+                            @if (item.Status == true)
+                            {
+                                <span><small class="label bg-green">kích hoạt</small></span>
+                            }
+                            else
+                            {
+                                <span><small class="label bg-red">Chưa kích hoạt</small></span>
+                            }
+
+                        </td>
+
+
+
+                        <td class="text-center">
+                            <a class="btn btn-success btn-sm" href="@Url.Action("Edit", "ContenNew", new { id = item.Id })"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
+                            <a class="btn btn-danger btn-sm" onclick="return confirm('ban có muốn xóa tên' + '&nbsp;' + '@item.Name')" href="@Url.Action("Xoabaiviet", "ContenNew", new { id = item.Id })"><span class="glyphicon glyphicon-edit"></span> Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+
+    </div>
+    <!-- /.table-responsive -->
+</div>

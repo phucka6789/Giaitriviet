@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Project.Models.Database.Permission>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+<section class="content-header">
+    <h1>
+        Quản lý Câu hỏi
+
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Câu hỏi</a></li>
+
+    </ol>
+</section>
+
+<section class="content">
+    <div class="row">
+       
+        <div class="col-xs-12">
+            <div class="box-body box box-primary">
+                <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Business.BusinessName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.PermissionName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Description)
+                            </th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Business.BusinessName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PermissionName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Description)
+                                </td>
+                                <td>
+                                
+                                    <a class="btn btn-success btn-sm" href="/Backends/Permission/Edit/@item.PermissionId"><i class="fa fa-pencil"></i></a>
+                                 
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+

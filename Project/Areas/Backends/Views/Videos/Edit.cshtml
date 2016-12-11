@@ -1,0 +1,213 @@
+﻿@model Project.Models.Database.Video
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<section class="content-header">
+    <h1>
+        Video
+
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Cập nhật Video</a></li>
+
+    </ol>
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Article
+                        </div>
+                        <div class="panel-body">
+                            @using (Html.BeginForm("Edit", "Videos", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.HiddenFor(model => model.Id)
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        @Html.ValidationSummary(true)
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>Danh mục </label>
+                                                <div class="form-group">
+                                                    @Html.DropDownList("CategoryID", null, new { @class = "form-control" })
+                                                    @Html.ValidationMessageFor(model => model.CategoryID)
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>Tên bài viết</label>
+                                                <div class="form-group">
+                                                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control Changetitle" })
+                                                    <span class="err">@Html.ValidationMessageFor(model => model.Name)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>Alias</label>
+                                                <div class="form-group">
+                                                    @Html.TextBoxFor(model => model.MetaTitle, new { @class = "form-control slug" })
+                                                    <span class="err">@Html.ValidationMessageFor(model => model.MetaTitle)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>SEO Keyword</label>
+                                                <div class="form-group">
+                                                    @Html.TextBoxFor(model => model.MetaKeywords, new { @class = "form-control" })
+                                                    <span class="err">@Html.ValidationMessageFor(model => model.MetaKeywords)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>Keyword Youtube</label>
+                                                <div class="form-group">
+                                                    @Html.TextBoxFor(model => model.Keyoutube, new { @class = "form-control" })
+                                                    <span class="err">@Html.ValidationMessageFor(model => model.Keyoutube)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>SEO Description</label>
+                                                <div class="form-group">
+                                                    @Html.TextAreaFor(model => model.MetaDescriptions, new { @class = "form-control", @Style = "height:120px" })
+                                                    <span class="err">@Html.ValidationMessageFor(model => model.MetaDescriptions)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>Mô tả ngắn</label>
+                                                <div class="form-group">
+                                                    @Html.TextAreaFor(model => model.Description, new { @class = "form-control", @Style = "height:120px" })
+                                                    @Html.ValidationMessageFor(model => model.Description)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>Người đăng bài</label>
+                                                <div class="form-group">
+                                                    @Html.TextBoxFor(model => model.Administrator.FullName, new { @class = "form-control" })
+                                                    @Html.ValidationMessageFor(model => model.Administrator.FullName)
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>Ngày đăng </label>
+                                                <div class="form-group">
+                                                    @Html.TextBoxFor(model => model.CreatedDate, new { @class = "form-control" })
+                                                    @Html.ValidationMessageFor(model => model.CreatedDate)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>Keyword Youtube</label>
+                                                <div class="form-group">
+                                                    @Html.TextBoxFor(model => model.ViewCount, new { @class = "form-control"  })
+                                                    <span class="err">@Html.ValidationMessageFor(model => model.ViewCount)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label>Trạng thái: </label>
+                                                    <div>
+                                                        <label class="checkbox-inline">
+                                                            @Html.CheckBoxFor(m => m.Status, new { @checked = "checked" }) Hiển thị
+                                                        </label>
+
+                                                        <label class="checkbox-inline">
+                                                            @Html.CheckBoxFor(m => m.TopHot) Nổi bật
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>Ảnh đại diện </label>
+                                                <div class="form-group">
+                                                    <input type="file" name="Image">
+                                                    @Html.HiddenFor(model => model.Image)
+                                                    @if (!String.IsNullOrEmpty(Model.Image))
+                                                    {<img src="@ViewBag.ImageSavePath/Youtube/@Model.Image" style="margin:10px 0; width:250px" />}
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-12 clearfix">
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label>Nội dung bài viết</label>
+                                                <div class="form-group">
+                                                    @Html.TextAreaFor(model => model.Detail, new { @class = "form-control ckeditor" })
+                                                    @Html.ValidationMessageFor(model => model.Detail)
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-actions no-color" style="margin-top:30px">
+                                            <input type="submit" value="Cập nhật" class="btn btn-primary btn-default" />
+                                            @Html.ActionLink("Trở về danh sách", "Index")
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            }
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+
+            </div>
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+@section Scripts{
+    <script src="/Content/ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('.ckeditor');
+    </script>
+
+}

@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Globalnews - Home</title>   
+    <link rel="icon" href="~/Content/fontend/images/favicon.ico" type="image/x-icon">
+    <link href="~/Content/fontend/css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+    <link href="~/Content/fontend/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/fontend/css/animate.css" />  
+    <link href="~/Content/fontend/css/custom-green.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/fontend/css/owl.carousel.css">
+    <link rel="stylesheet" href="~/Content/fontend/css/owl.transitions.css">
+    <link rel="stylesheet" href="~/Content/fontend/css/magnific-popup.css">
+  
+    
+</head>
+<body>
+    <!-- preloader start -->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    <!-- preloader end -->
+
+
+    <div class="wrapper">
+
+
+        <div class="sticky-header">
+            <!-- header start -->
+            <div class="container header">
+                <div class="row">
+                    <div class="col-sm-5 col-md-5 wow fadeInUpLeft animated"><a class="navbar-brand" href="index.html">globalnews</a></div>
+                    <div class="col-sm-11 col-md-11 hidden-xs text-right"><img class="img-responsive" src="~/Content/fontend/images/ads/468-60-ad.gif" width="468" height="60" alt="" /></div>
+                </div>
+            </div>
+            <!-- header end -->
+            <!-- nav and search start -->
+            <div class="nav-search-outer">
+                <!-- nav start -->
+
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-16">
+                                <a href="javascript:;" class="toggle-search pull-right"><span class="ion-ios7-search"></span></a>
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="navbar-collapse">
+                                    <ul class="nav navbar-nav text-uppercase main-nav ">
+                                        <li class="active"><a href="/Home/Index">Trang chủ</a></li>
+                                        <li> <a href="/DJ/Index">Nhạc DJ</a></li>                                       
+                                        <li> <a href="/Nhacsang/Index">Nhạc Remix</a></li>
+                                        <li> <a href="/Bolero/Index">Nhạc Bolero</a></li>
+                                        <li> <a href="/NhacSong/Index">Nhạc Sống</a></li>                                       
+                                        <li> <a href="/Remix/Index">DJ Vếu</a></li>
+
+                                        @*<li> <a href="/Home/PageVideo">Video</a></li>
+                                        <li> <a href="/Home/PateNew">Tin tức</a></li>
+                                        <li> <a href="/Home/DetailPageVideo">Video Detail</a></li>
+                                        <li> <a href="/Home/DetailNew">Tin tức Detai</a></li>*@                                       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- nav end -->
+                    <!-- search start -->
+
+                    <div class="search-container ">
+                        <div class="container">
+                            <form action="" method="" role="search">
+                                <input id="search-bar" placeholder="Nội dung tìm kiếm.." autocomplete="off">
+                            </form>
+                        </div>
+                    </div>
+                    <!-- search end -->
+                </nav>
+                <!--nav end-->
+            </div>
+            <!-- nav and search end-->
+        </div>
+        <!-- sticky header end -->
+        <!-- top sec start -->
+        @RenderBody()
+      
+        <!-- Footer start -->
+        <footer>
+            <div class="top-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-16">
+                            <div class="row">
+                                <div class="col-sm-8 col-xs-16 copyrights text-left wow fadeInDown animated" data-wow-delay="0.5s" data-wow-offset="10">© 2016 GLOBALNEWS THEME - ALL RIGHTS RESERVED</div>
+                                <div class="col-sm-8 col-xs-16 copyrights text-right wow fadeInDown animated" data-wow-delay="0.5s" data-wow-offset="10">
+                                    <span class="glyphicon glyphicon-earphone"></span>&nbsp;016 36 32 68 78 <br>
+                                    <span class="glyphicon glyphicon-envelope"></span>&nbsp;trinhdinhphuc1006@gmail.com
+                                
+                                 </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>         
+
+        </footer>
+        <!-- Footer end -->
+
+
+    </div>
+    <!-- wrapper end -->
+    <!-- jQuery -->    
+    <script src="~/Content/fontend/js/jquery.min.js"></script>
+    <!--jQuery easing-->
+    <script src="~/Content/fontend/js/jquery.easing.1.3.js"></script>
+    <!-- bootstrab js -->
+    <script src="~/Content/fontend/js/bootstrap.js"></script>
+    <!--style switcher-->
+    <script src="~/Content/fontend/js/style-switcher.js"></script> <!--wow animation-->
+    <script src="~/Content/fontend/js/wow.min.js"></script>
+    <!-- time and date -->
+    <script src="~/Content/fontend/js/moment.min.js"></script>
+    <!--news ticker-->
+    <script src="~/Content/fontend/js/jquery.ticker.js"></script>
+    <!-- owl carousel -->
+    <script src="~/Content/fontend/js/owl.carousel.js"></script>
+    <!-- magnific popup -->
+    <script src="~/Content/fontend/js/jquery.magnific-popup.js"></script>
+    <!-- weather -->
+    <script src="~/Content/fontend/js/jquery.simpleWeather.min.js"></script>
+    <!-- calendar-->
+    <script src="~/Content/fontend/js/jquery.pickmeup.js"></script>
+    <!-- go to top -->
+    <script src="~/Content/fontend/js/jquery.scrollUp.js"></script>
+    <!-- scroll bar -->
+    <script src="~/Content/fontend/js/jquery.nicescroll.js"></script>
+    <script src="~/Content/fontend/js/jquery.nicescroll.plus.js"></script>
+    <!--masonry-->
+    <script src="~/Content/fontend/js/masonry.pkgd.js"></script>
+    <!--media queries to js-->
+    <script src="~/Content/fontend/js/enquire.js"></script>
+    <!--custom functions-->
+    <script src="~/Content/fontend/js/custom-fun.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

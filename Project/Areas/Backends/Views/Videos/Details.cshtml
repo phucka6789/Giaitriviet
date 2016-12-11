@@ -1,0 +1,170 @@
+﻿@model Project.Models.Database.Video
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Video</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Administrator.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Administrator.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Administrator1.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Administrator1.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CatVideo.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CatVideo.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MetaTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MetaTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Keyoutube)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Keyoutube)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Detail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Detail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Warranty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Warranty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MetaKeywords)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MetaKeywords)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MetaDescriptions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MetaDescriptions)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ViewCount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ViewCount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TopHot)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TopHot)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tags)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tags)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeleteVideo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeleteVideo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
